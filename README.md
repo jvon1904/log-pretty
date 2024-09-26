@@ -15,13 +15,13 @@ The '34' is the code for blue and the '0' at the end resets all styles.  You can
 Install the gem and add to the application's Gemfile by executing:
 
 ```bash
-$ bundle add log_pretty
+$ bundle add log-pretty
 ```
 
 If bundler is not being used to manage dependencies, install the gem by executing:
 
 ```bash
-$ gem install log_pretty
+$ gem install log-pretty
 ```
 
 Then, if you would like to use the `#logp` method as a top-level method, inlude the `LogPretty` module.
@@ -61,4 +61,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the LogPretty project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/jvon1904/log_pretty/blob/main/CODE_OF_CONDUCT.md).
+Everyone interacting in the LogPretty project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/jvon1904/log-pretty/blob/main/CODE_OF_CONDUCT.md).

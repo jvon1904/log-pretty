@@ -3,13 +3,13 @@
 require_relative 'lib/log_pretty/version'
 
 Gem::Specification.new do |spec|
-  spec.name = 'log_pretty'
+  spec.name = 'log-pretty'
   spec.version = LogPretty::VERSION
   spec.authors = ['Jesse vonBergen']
   spec.email = ['jvon1904@gmail.com']
 
   spec.summary = spec.description = 'Provides intuitive methods for outputting ANSI escaped content to terminal'
-  spec.homepage = 'https://github.com/jvon1904/log_pretty'
+  spec.homepage = 'https://github.com/jvon1904/log-pretty'
   spec.license = 'MIT'
   spec.required_ruby_version = '>= 3.3.0'
 
