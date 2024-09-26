@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.authors = ['Jesse vonBergen']
   spec.email = ['jvon1904@gmail.com']
 
-  spec.summary = spec.description = 'Provides intuitive methods for outputting ANSI escaped content to terminal'
+  spec.summary = spec.description = 'Provides intuitive methods for outputting ANSI escaped content to the terminal'
   spec.homepage = 'https://github.com/jvon1904/log-pretty'
   spec.license = 'MIT'
   spec.required_ruby_version = '>= 3.3.0'
