@@ -26,7 +26,7 @@ $ gem install log-pretty
 
 Then, if you would like to use the `#logp` method as a top-level method, inlude the `LogPretty` module.
 
-In Rails, this can be done by adding fild `config/initializers/log_pretty.rb' with the following content.
+In Rails, this can be done by adding fild `config/initializers/log-pretty.rb' with the following content.
 
 ```ruby
 include LogPretty

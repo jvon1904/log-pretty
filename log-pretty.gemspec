@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative 'lib/log_pretty/version'
+require_relative 'lib/log-pretty/version'
 
 Gem::Specification.new do |spec|
   spec.name = 'log-pretty'

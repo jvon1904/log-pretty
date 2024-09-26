@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-require_relative 'log_pretty/version'
-require_relative 'log_pretty/ansi_printer'
+require_relative 'log-pretty/version'
+require_relative 'log-pretty/ansi_printer'
 
 # Extend module for global access to #logp method
 module LogPretty
