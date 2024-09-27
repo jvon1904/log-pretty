@@ -10,6 +10,10 @@ module LogPretty
   def logp(input, **opts)
     output = AnsiPrinter.new(input:, **opts).output
 
-    $stdout.puts output.to_s
+    # Print to STDOUT
+    $stdout.puts output
+
+    # Return value
+    output
   end
 end

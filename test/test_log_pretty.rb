@@ -34,4 +34,8 @@ class TestLogPretty < Minitest::Test
       logp('I am bold and italic!', format: %i[bold italic])
     end
   end
+
+  def test_it_returns_output
+    assert_equal(logp('foo'), "\e[6m\e[49m\e[39mfoo\e[0m")
+  end
 end
