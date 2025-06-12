@@ -6,7 +6,7 @@ Gem::Specification.new do |spec|
   spec.name = 'log-pretty'
   spec.version = LogPretty::VERSION
   spec.authors = ['Jesse vonBergen']
-  spec.email = ['jvon1904@gmail.com']
+  spec.email = ['jvon1904@avocoaster.com']
 
   spec.summary = spec.description = 'Provides intuitive methods for outputting ANSI escaped content to the terminal'
   spec.homepage = 'https://github.com/jvon1904/log-pretty'

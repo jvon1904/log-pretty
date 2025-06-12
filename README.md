@@ -1,6 +1,6 @@
 # LogPretty
 
-LogPretty adds functionaltiy to print to STDOUT using [ANSI escape](https://en.wikipedia.org/wiki/ANSI_escape_code) colors and formatting.
+LogPretty adds functionaltiy to print to STDOUT or any logging device using [ANSI escape](https://en.wikipedia.org/wiki/ANSI_escape_code) colors and formatting.
 
 You can echo the following to any ANSI-compatible terminal to see blue output.
 
@@ -8,7 +8,7 @@ You can echo the following to any ANSI-compatible terminal to see blue output.
 $ echo "\e[34mHello world!\e[0m"
 ```
 
-The '34' is the code for blue and the '0' at the end resets all styles.  You can find a helpful list of ANSI codes [here](https://gist.github.com/fnky/458719343aabd01cfb17a3a4f7296797).
+The '34' is the code for blue and the '0' at the end resets all styles. You can find a helpful list of ANSI codes [here](https://gist.github.com/fnky/458719343aabd01cfb17a3a4f7296797).
 
 ## Installation
 
@@ -34,7 +34,7 @@ include LogPretty
 
 ## Usage
 
-The main method `#logp` (which stands for 'log pretty') logs pretty content (colors, formatting, etc.) to standard output.  This can be useful for writing scrips and CLIs where you would like the user to see prettier content in their terminal.
+The main method `#logp` (which stands for 'log pretty') logs pretty content (colors, formatting, etc.) to standard output. This can be useful for writing scrips and CLIs where you would like the user to see prettier content in their terminal.
 
 Supply a String argument for the content and any optional formatting arguments.
 
@@ -51,9 +51,19 @@ logp('Red alert!', color: :red, format: %i[underline bold italic])
 ```
 
 Avaliable optional keys are:
+
 - color
 - background
 - format
+
+Additionally, you can specify a log file with an optional compatible Logger formatter proc.
+
+```
+l = LogPretty::Logger.new('log/log_pretty.log', formatter)
+l.logp("Hello, world! 👋")
+```
+
+By default, LogPretty will write to the logging file in addition to STDOUT and return the output to the caller.
 
 ## License
 

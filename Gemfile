@@ -9,6 +9,7 @@ group :test, :development do
   gem 'bundler'
   gem 'minitest', '~> 5.23.1'
   gem 'minitest-reporters'
+  gem 'pry'
   gem 'rake', '~> 13.2.1'
   gem 'rubocop', '~> 1.64.0'
   gem 'yard', '~> 0.9.36'
