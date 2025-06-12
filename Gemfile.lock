@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    log-pretty (0.1.3)
+    log-pretty (0.2.0)
 
 GEM
   remote: https://rubygems.org/
